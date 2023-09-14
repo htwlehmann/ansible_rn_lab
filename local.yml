@@ -3,6 +3,12 @@
   become: true
 
   tasks:
-  - name: Install mc
+  - name: Install packages
     apt:
-      name: mc
+      name:
+        - htop
+        - mc
+        - tmux
+        - btop
+        - nvim
+        
